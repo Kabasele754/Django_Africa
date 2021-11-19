@@ -1,0 +1,99 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+        <h3>Formulaire d'inscription des eleves</h3>
+
+            <div class="mb-3">
+              <input type="datetime-local" class="form-control"  placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control"  placeholder="Nom">
+            </div>
+            <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Post-nom">
+            </div>
+            <div class="mb-3">
+            <input type="text" class="form-control"  placeholder="Prenom">
+            </div>
+            <div class="mb-3">
+            <input type="text" class="form-control"  placeholder="Adress">
+            </div>
+             <div class="mb-3">
+            <input type="text" class="form-control"  placeholder="Sexe">
+            </div>
+             <div class="mb-3">
+            <input type="text" class="form-control"  placeholder="classe">
+            </div>
+        <button type="button" class="btn btn-success">Enregisrer</button>
+
+    </div>
+
+    <div class="col-8">
+          <h3 style="">Liste des eleves</h3>
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Annee</th>
+                  <th scope="col">Nom</th>
+                  <th scope="col">Post-Nom</th>
+                  <th scope="col">Prenom</th>
+                  <th scope="col">Adresse</th>
+                  <th scope="col">Sexe</th>
+                  <th scope="col">Classe</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+                <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <input type="button" value="Edit" class="btn btn-warning btn-sm btn-edit">
+                    <input type="button" value="Delete" class="btn btn-danger btn-sm btn-del" >
+                 </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td>@fat</td>
+                  <td>@fat</td>
+                  <td>@fat</td>
+                  <td>@fat</td>
+                  <td>
+                    <input type="button" value="Edit" class="btn btn-warning btn-sm btn-edit">
+                    <input type="button" value="Delete" class="btn btn-danger btn-sm btn-del" >
+                  </td>
+
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                  <td>@twitter</td>
+                  <td>@twitter</td>
+                  <td>@twitter</td>
+                  <td>@twitter</td>
+                  <td>
+                    <input type="button" value="Edit" class="btn btn-warning btn-sm btn-edit" >
+                    <input type="button" value="Delete" class="btn btn-danger btn-sm btn-del">
+                  </td>
+                </tr>
+                </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
